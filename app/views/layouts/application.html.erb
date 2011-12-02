@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rural India - A People's Archive</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+<div>
+  <span>Rural India - A People's Archive</span>
+</div>
+<div>
+  <% CategoryController.new.all.each do |category| %>
+    <span><%= category.name %></span>
+  <% end %>
+</div>
+<%= yield %>
+</body>
+</html>
