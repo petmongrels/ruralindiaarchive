@@ -3,4 +3,5 @@ Home page would contain stories from all categories without any side bar.
 Category page would contain stories. In the right hand side would contain top stories from categories.
 Story page would main story. In the right hand side would contain stories which match the same category and recent.
 
+Try out with image
 RSS for entire site and for every category
