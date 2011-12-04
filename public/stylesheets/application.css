@@ -2,3 +2,23 @@
   Override default refinery application CSS below.
   Formatting applies to all frontend.
 */
+#body_content {
+    width: 80%;
+    float: left;
+    position: relative;
+}
+
+#side_body_content {
+    width: 18%;
+    float: left;
+    position: relative;
+    border-left: 10px solid #ffffff;
+}
+
+.content_category {
+    border-right: 5px solid #ffffff;
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,6 +1,10 @@
-<section id='body_content'>
-  <%=raw @page.content_for(:body) %>
-</section>
-<section id='side_body_content'>
-  <%=raw @page.content_for(:side_body) %>
-</section>
+<div id='body_content'>
+  <section id='body_content_section'>
+    <%= raw @page.content_for(:body) %>
+  </section>
+</div>
+<div id='side_body_content'>
+  <section id='side_body_content_section'>
+    <%= raw @page.content_for(:side_body) %>
+  </section>
+</div>

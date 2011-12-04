@@ -1,0 +1,7 @@
+<div id="categories">
+  <% @recently_created_pages.each do |page| %>
+      <div id='body_content'>
+        <%= page.content_for(:body) %>
+      </div>
+  <% end %>
+</div>

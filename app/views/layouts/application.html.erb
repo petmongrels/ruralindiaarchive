@@ -10,9 +10,9 @@
 <div>
   <span>Rural India - A People's Archive</span>
 </div>
-<div>
+<div id="categories">
   <% CategoryController.new.all.each do |category| %>
-    <span><%= category.name %></span>
+      <span class="content_category"><a href=""><%= category.name %></a></span>
   <% end %>
 </div>
 <%= yield %>
