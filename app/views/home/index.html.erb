@@ -1,10 +1,12 @@
+<% require "refinerycms-settings" %>
+
 <div id="categories">
   <% @recently_created_pages.each do |page| %>
       <div id='body_content'>
         <p>
           <%= page.title %>
         </p>
-        <%= page.content_for(:body)[0, 40] %>
+        <%=raw page.content_for(:body)[0, RefinerySetting.get(:home_page_story_preview_size)] %>
       </div>
   <% end %>
 </div>
