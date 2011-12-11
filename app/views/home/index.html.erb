@@ -6,7 +6,8 @@
         <p>
           <%= page.title %>
         </p>
-        <%=raw page.content_for(:body)[0, RefinerySetting.get(:home_page_story_preview_size)] %>
+        <%=raw page.for_home_page %>
+        <a href=<%= page.nested_path %>>...read more</a>
       </div>
   <% end %>
 </div>

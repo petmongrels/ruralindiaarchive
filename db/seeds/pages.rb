@@ -37,7 +37,7 @@ page_not_found_page.parts.create({
             })
 
 about_us_page = Page.create(:title => "About",
-            :deletable => true,
+            :deletable => false,
             :position => (page_position += 1))
 about_us_page.parts.create({
               :title => "Body",
