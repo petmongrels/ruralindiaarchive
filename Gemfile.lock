@@ -28,6 +28,8 @@ GEM
       activemodel (= 3.0.11)
       activesupport (= 3.0.11)
     activesupport (3.0.11)
+    acts-as-taggable-on (2.1.1)
+      rails
     acts_as_indexed (0.7.7)
     arel (2.0.10)
     awesome_nested_set (2.0.2)
@@ -56,6 +58,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.17.2)
+    nokogiri (1.5.0-x86-mingw32)
     orm_adapter (0.0.5)
     polyglot (0.3.3)
     rack (1.2.4)
@@ -154,6 +157,8 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  acts-as-taggable-on
+  nokogiri
   refinerycms (~> 1.0.9)
   refinerycms-i18n (~> 1.0.0)
   sqlite3

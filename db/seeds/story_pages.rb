@@ -21,3 +21,8 @@ page.parts.create({
 <p>&quot;In some of our villages,&quot; says Vasudev Ingle in Kinkhed in Akola district, &quot;you can get water through the formal supply once in 10 or 12 days.&quot; Maya Ove of Dharel village, carrying three pots on her head, each atop the other, stops to agree. &quot;This takes hours of our time every day.&quot; Even the livestock you see are searching for water. And wild animals are wandering into the farms or villages looking for it.</p>",
                       :position => 0
                   })
+page.parts.create({
+                    :title => "Categories",
+                    :body => "Things we do, Farm crisis",
+                    :position => 1
+                  })
