@@ -12,7 +12,7 @@
 </div>
 <div id="categories">
   <% CategoryController.new.all.each do |category| %>
-      <span class="content_category"><a href=""><%= category.name %></a></span>
+      <span class="content_category"><a href="/categories/<%= category.as_url %>"><%= category.name %></a></span>
   <% end %>
 </div>
 <%= yield %>

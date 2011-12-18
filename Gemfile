@@ -72,3 +72,4 @@ gem 'refinerycms-i18n',         '~> 1.0.0'
 # END USER DEFINED
 gem 'acts-as-taggable-on'
 gem 'nokogiri'
+gem 'hpricot'

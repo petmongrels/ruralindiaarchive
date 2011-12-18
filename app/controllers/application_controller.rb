@@ -11,9 +11,10 @@ class ApplicationController < ActionController::Base
 
     def add_tags
       category_part = self.parts.select { |part| part.title == "Categories" }.first
-      logger.info category_part.body
-      doc = Nokogiri.XML(category_part.body)
-      self.category_list = doc.content
+      unless (category_part.nil?)
+        doc = Nokogiri.XML(category_part.body)
+        self.category_list = doc.content
+      end
     end
   end
 end
