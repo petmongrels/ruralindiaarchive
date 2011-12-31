@@ -7,6 +7,7 @@ unless !defined?(::SeoMeta) || ::SeoMeta.attributes.keys.all? { |k|
   ::Page.translation_class.send :is_seo_meta
 end
 
+########################################################################################################################################################
 page = Page.create(:title => "Drought in Vidarbha",
                    :deletable => true,
                    :position => 0)
@@ -26,3 +27,19 @@ page.parts.create({
                     :body => "Things we do, Farm crisis",
                     :position => 1
                   })
+########################################################################################################################################################
+page = Page.create(:title => "Women warriors of the sea",
+                   :deletable => true,
+                   :position => 1)
+page.parts.create({
+                      :title => "Body",
+                      :body => "Struggling to preserve their livelihood in the face of the rapid expansion of the Mundra Port and Special Economic Zone in Gujarat, the women and men of nearby fishing villages are trying hard to come to terms with a changing world. Geeta Seshu has more. 31 May 2008 - Mundra, Gujarat - WFS - &quot;We can see the towers of the new port in the distance. We can also see our day's catch getting smaller and smaller. We are being slowly pushed further from the sea. But the sea belongs to everyone. The sea will not let us down,&quot; says an optimistic Jannatbai, a leading member of a fishing community at Mundra on the western coast of Gujarat.
+Struggling to preserve their livelihood in the face of the rapid expansion of the over-Rs.70,000 million Mundra Port and Special Economic Zone (MPSEZ) promoted by the Adani group, the women and men of over 10 fishing villages in the area are trying hard to come to terms with a changing world. Their once bountiful sea is now flooded with trawlers, bulldozers, pipelines, towers and bridges of what is touted to be the country's largest SEZ, comprising an airport and a seaport spanning 28 kilometres of the coastline and 13,000 hectares of land in the Gulf of Kutch.",
+                      :position => 0
+                  })
+page.parts.create({
+                    :title => "Categories",
+                    :body => "We are",
+                    :position => 1
+                  })
+########################################################################################################################################################

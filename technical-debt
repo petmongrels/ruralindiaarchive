@@ -1,2 +1,3 @@
 What is the best place to define class_eval methods? How to unit test them?
 Why does the class_eval done on HomeController is not available when viewing categories
+How to get rid of malformed html when doing substring

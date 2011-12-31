@@ -1,4 +1,4 @@
-<div id="stories">
+<div id='body_content'>
   <% @recently_created_pages.each do |page| %>
       <div>
         <p>
@@ -6,6 +6,17 @@
         </p>
         <%=raw page.for_category_page %>
         <a href=<%= page.nested_path %>>...read more</a>
+      </div>
+  <% end %>
+</div>
+<div id='side_body_content'>
+  <% @related_pages.each do |page| %>
+      <div>
+        <p>
+          <%= page.title %>
+        </p>
+        <%=raw page.for_category_page %>
+        <a href=<%= page.nested_path %>>...read more......</a>
       </div>
   <% end %>
 </div>
