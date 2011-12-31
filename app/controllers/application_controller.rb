@@ -16,5 +16,9 @@ class ApplicationController < ActionController::Base
         self.category_list = doc.content
       end
     end
+
+    def relative_path
+      '/stories' + self.nested_path
+    end
   end
 end

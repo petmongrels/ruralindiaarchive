@@ -21,8 +21,9 @@ class CategoryController < ApplicationController
 
     limit = RefinerySetting.get(:number_of_other_stories_on_category_page)
     other_categories = @@categories.select { |c| c != category }
-    #puts "|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||"
-    related_pages = Page.tagged_with(other_categories.collect{|c| c.name}, :any => true).limit(limit * 2)
+    related_pages = Page.tagged_with(other_categories.collect{|c| c.name}, :any => true).order("created_at DESC").limit(limit * 2)
     @related_pages = (related_pages - @recently_created_pages)[0..(limit-1)]
   end
+
+  #puts "|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||"
 end
