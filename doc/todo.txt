@@ -1,6 +1,14 @@
-Need multiple type of pages: home-page, category page, story page and info (contact, static) pages
-Category page on the right hand side would contain top stories from other categories. It should not show story marked with same category
-Story page would main story. In the right hand side would contain stories which match the same category and recent.
-
-Try out with image
+Image gallery with some text
 RSS for entire site and for every category
+User manual should not be required
+
+Items on the page
+-----------------
+Title, Story, ExtractedSections (annotate using <span> with an id), Videos, Images
+
+Engines which might be useful
+1. Inquiries (https://github.com/resolve/refinerycms-inquiries)
+2. Site Search (https://github.com/resolve/refinerycms-search)
+3. Copyrighting (https://github.com/unixcharles/refinerycms-copywriting)
+4. Podcasting (https://github.com/resolve/refinerycms-page-images)
+5. Images (https://github.com/resolve/refinerycms-page-images)

@@ -6,13 +6,14 @@
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 <body>
 <div>
   <span>Rural India - A People's Archive</span>
 </div>
 <div id="categories">
   <% CategoryController.new.all.each do |category| %>
-      <span class="content_category"><a href="/categories/<%= category.as_url %>"><%= category.name %></a></span>
+      <span class="content_category"><a href="<%= category.as_url %>"><%= category.name %></a></span>
   <% end %>
 </div>
 <%= yield %>

@@ -2,7 +2,7 @@ class AddCategories < ActiveRecord::Migration
   def self.up
     Category.create(:name => "Things we do", :description => "")
     Category.create(:name => "Tongues", :description => "")
-    Category.create(:name => "Pictures", :description => "")
+    Category.create(:name => "Gallery", :description => "")
     Category.create(:name => "Getting there", :description => "")
     Category.create(:name => "We are", :description => "")
     Category.create(:name => "Things we make", :description => "")

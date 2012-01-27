@@ -1,0 +1,22 @@
+<div id='body_content'>
+  <% @recently_created_pages.each do |page| %>
+      <div class="<%= category_style %>">
+        <p>
+          <%= page.title %>
+        </p>
+        <%=raw page.for_category_page %>
+        <a href=<%= page.relative_path %>>...read more</a>
+      </div>
+  <% end %>
+</div>
+<div id='side_body_content'>
+  <% @related_pages.each do |page| %>
+      <div>
+        <p>
+          <%= page.title %>
+        </p>
+        <%=raw page.for_category_page %>
+        <a href=<%= page.relative_path %>>...read more......</a>
+      </div>
+  <% end %>
+</div>

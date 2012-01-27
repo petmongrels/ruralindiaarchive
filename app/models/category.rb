@@ -1,5 +1,9 @@
 class Category < ActiveRecord::Base
   def as_url
-    name.tr(' ', '-')
+    if name == 'Gallery'
+      '/gallery'
+    else
+      '/categories/' + name.tr(' ', '-')
+    end
   end
 end
